@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site(网站)
-title: JaMin博客 #网站标题
+title: JiaMing-Blog #网站标题
 subtitle: '乘风破浪会有时,直挂云帆济沧海'
 description: '码农'
 keywords: "C#,HTML,CSS,JavaScript,jQuery,SQL Server,Git,SVN,Coder"
-author: JaMin Fu #自己的名称
+author: 傅佳明 #自己的名称
 email: 408996194@qq.com
 language: en #要使用的语言
 timezone: 'Asia/Shanghai' #网站时区
@@ -44,7 +44,7 @@ external_link:  # 在新标签中打开链接
   exclude: '' #需要排除的域名。主域名和子域名如 www 需分别配置	
 filename_case: 0 #把文件名称转换为 (1) 小写或 (2) 大写
 render_drafts: false #显示草稿
-post_asset_folder: true #启动Asset文件夹 存放本地相对路径
+post_asset_folder: false #启动Asset文件夹 存放本地相对路径
 relative_link: false  #把链接改为与根目录的相对位址
 future: true #显示未来的文章
 highlight: #代码块的设置
@@ -123,3 +123,28 @@ jsonContent:
       excerpt: false
       categories: false
       tags: true
+
+  # Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+## https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+live2d:
+  enable: true
+  #enable: false
+  scriptFrom: local # 默认
+  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    use: live2d-widget-model-z16
+  display:
+    position: right
+    width: 145
+    height: 290
+  mobile:
+    show: true # 是否在移动设备上显示
+    scale: 0.5 # 移动设备上的缩放
+  react:
+    opacityDefault: 0.7
+    opacityOnHover: 0.8

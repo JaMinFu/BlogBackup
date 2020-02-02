@@ -6,13 +6,14 @@ tags: Hexo
 ### Tips:前期准备安装
 - __<u>[Git](https://git-scm.com/)</u>__ 
 - __<u>[Node.js](https://nodejs.org/zh-cn/ )</u>__ 
+- __安装淘宝的npm镜像__
+  由于node安装插件是从国外服务器下载，受网络影响大，速度慢且可能出现异常。所以如果npm的服务器在中国就好了，所以我们乐于分享的淘宝团队（阿里巴巴旗下业务阿里云）干了这事。来自官网：“这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步.  
+  _以后用到`npm`直接改成`cnpm`代替即可_.
 ---
-## 1.安装npm镜像
- 1.1:由于node安装插件是从国外服务器下载，受网络影响大，速度慢且可能出现异常。所以如果npm的服务器在中国就好了，所以我们乐于分享的淘宝团队（阿里巴巴旗下业务阿里云）干了这事。来自官网：“这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步._以后用到`npm`直接改成`cnpm`代替即可_.  
- 以下截图我采用的是`Git Bash`。
+    npm install -g cnpm --registry=https://registry.npm.taobao.org 
 
-    $ npm install -g cnpm --registry=https://registry.npm.taobao.org  
-![](Hexo博客搭建/1.png)  
+
+<!-- more -->
 ## 2.使用npm安装<u>[Hexo](https://hexo.io/zh-cn/)</u>
 安装了淘宝镜像的，这里可以把npm替换为cnpm，下面是贴的官网代码😂.
 
@@ -27,14 +28,14 @@ Blog这个文件夹可以看到生成的文件如下图：
 ![](Hexo博客搭建/4.png)
 ## 4.启动Hexo
 使用以下命令启动Hexo博客，然后浏览器输入服务地址即可看到。
-效果图如下：  
+如下图：  
 
     $ hexo -s
 ![](Hexo博客搭建/5.png)
 ![](Hexo博客搭建/6.png)
 
 
-## 5.创建一篇博客
+## 5.试着写一篇博客
 5.1使用以下命令创建博客，我这里采用的[Markdown](https://markdown-zh.readthedocs.io/en/latest/)语法写的.  
 _学习成本超低,实话说，我也是第一次写，望多多指教._  
 我这里使用的VsCode编辑器.  
@@ -58,7 +59,7 @@ _学习成本超低,实话说，我也是第一次写，望多多指教._
 
     $ hexo s
 
-## 6.发布到GtiHub上
+## 6.发布GtiHub上
 6.1 在GitHub上创建一个仓库如下图  
 ***新建一个 repository。如果你希望你的站点能通过 <你的 GitHub 用户名>.github.io 域名访问，你的 repository 应该直接命名为 <你的 GitHub 用户名>.github.io。--[来源Hexo官网](https://hexo.io/zh-cn/docs/github-pages)***
 ![](Hexo博客搭建/11.png)
@@ -81,5 +82,4 @@ ps:这里我替换了默认的主题。
 >### 第一次写博客，第一次搭建Hexo博客，还是挺顺的，刚学的Markdown语法，正好用来练手，同时也纪念下学习过程，写的好慢啊，如有不合理的地方麻烦指正，我会努力改进的，谢谢！
 
 * __作者: JaMinFu__  
-* __链接：__  
 * __版权：转载请注明出处！__
