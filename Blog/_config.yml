@@ -44,7 +44,10 @@ external_link:  # 在新标签中打开链接
   exclude: '' #需要排除的域名。主域名和子域名如 www 需分别配置	
 filename_case: 0 #把文件名称转换为 (1) 小写或 (2) 大写
 render_drafts: false #显示草稿
-post_asset_folder: false #启动Asset文件夹 存放本地相对路径
+post_asset_folder: false #启动Asset文件夹 存放本地相对路径(有毒啊)
+filter_image: # 日志是否启用
+  log: true
+  root: /BlogImages/
 relative_link: false  #把链接改为与根目录的相对位址
 future: true #显示未来的文章
 highlight: #代码块的设置
@@ -157,5 +160,5 @@ canvas_nest:
   color: '204, 0, 188'        # color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   pointColor: '156,39,176'     # color of points, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: '0.8'               # the opacity of line (0~1), default: 0.5.
-  count: '110'                  # the number of lines, default: 99.
+  count: '60'                  # the number of lines, default: 99.
   zIndex: '-1'                 # z-index property of the background, default: -1.
